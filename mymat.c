@@ -1,7 +1,7 @@
 #include "mymat.h"
 #include <stdlib.h>
 #include <stdio.h>
-
+#include <string.h>
 /* Print a matrix in the 2D format */
 void print_mat(mat m1)
 {
