@@ -1,14 +1,20 @@
-// mainmat.c
-#include <stdio.h>
 #include "mymat.h"
+#include <stdio.h>
+
+#define AMOUNT_OF_MAT 6
+mat *mat_array[AMOUNT_OF_MAT];
 
 int main()
 {
-    int result_add = add(3, 5);
-    int result_multiply = multiply(2, 4);
+    mat MAT[6];
+    int i;
 
-    printf("Addition: %d\n", result_add);
-    printf("Multiplication: %d\n", result_multiply);
+    for (i = 0; i < 6; i++)
+    {
+        initialize_mat(MAT[i], 0);
+    }
+
+    print_mat(MAT[0]);
 
     return 0;
 }
